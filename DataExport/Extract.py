@@ -7,7 +7,6 @@ source_dir = 'C:\\Users\\rami.ismail\\Desktop\\FYP\\Scripts\\Modis\\ModisExtensi
 # Loop through all files in the source directory
 for file_name in os.listdir(source_dir):
     if file_name.endswith('.zip'): # Check if the file is a zip file
-        # Extract the zip file to a folder with the same name as the zip file
         zip_file_path = os.path.join(source_dir, file_name)
         with zipfile.ZipFile(zip_file_path, 'r') as zip_file:
             extract_path = os.path.join(source_dir, os.path.splitext(file_name)[0])
