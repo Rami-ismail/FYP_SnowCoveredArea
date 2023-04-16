@@ -2,7 +2,7 @@ import os
 import zipfile
 
 # Set the source directory where the zip files are located
-source_dir = 'C:\\Users\\rami.ismail\\Desktop\\FYP\\Scripts\\Modis\\ModisExtension\\DataExport\\RawData'
+source_dir = os.path.join('DataExport','RawData')
 
 # Loop through all files in the source directory
 for file_name in os.listdir(source_dir):

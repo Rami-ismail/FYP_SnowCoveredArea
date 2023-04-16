@@ -1,7 +1,7 @@
 import os
 
 # Set the source directory where the folders are located
-source_dir = 'C:\\Users\\rami.ismail\\Desktop\\FYP\\Scripts\\Modis\\ModisExtension\\DataExport\\RawData'
+source_dir = os.path.join('DataExport','RawData')
 
 # Loop through all folders in the source directory
 for folder_name in os.listdir(source_dir):
