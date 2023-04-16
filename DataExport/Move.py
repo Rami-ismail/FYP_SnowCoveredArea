@@ -2,10 +2,10 @@ import os
 import shutil
 
 # specify the source directory where the folders are located
-source_directory = "C:\\Users\\rami.ismail\\Desktop\\FYP\\Scripts\\Modis\\ModisExtension\\DataExport\\RawData"
+source_directory = os.path.join('DataExport','RawData')
 
 # specify the destination directory where you want to move the files to
-destination_directory = "C:\\Users\\rami.ismail\\Desktop\\FYP\\Scripts\\Modis\\ModisExtension\\DataExport\\Lebanon-Snow-Cover-Data"
+destination_directory = os.path.join('DataExport','Lebanon-Snow-Cover-Data')
 
 # loop through each folder in the source directory
 for foldername in os.listdir(source_directory):
